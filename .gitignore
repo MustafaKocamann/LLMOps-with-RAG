@@ -1,0 +1,30 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Cache and logs
+.cache/
+*.log
+
+# Local databases
+*.db
+*.sqlite3
+
+# RAG artifacts
+chroma_db/
+vector_store/
