@@ -1,0 +1,26 @@
+# ==========================================
+# RAG Application Configuration
+# ==========================================
+
+# Embedding Model Configuration
+embedding_model:
+  provider: "google"
+  model_name: "models/gemini-embedding-001"
+
+# Retriever Configuration
+retriever:
+  top_k: 10
+  search_type: "mmr"
+
+  # Maximum Marginal Relevance
+  fetch_k: 20
+  lambda_mult: 0.5
+
+# LLM Configuration
+llm:
+  provider: "evren"
+  model_name: "deepseek-v4-flash"
+  temperature: 0
+  max_output_tokens: 2048
+  timeout: 60
+  max_retries: 3
